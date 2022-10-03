@@ -11,3 +11,8 @@ cp ./home.nix ~/.config/nixpkgs/
 
 echo "Installing home packages"
 home-manager switch
+
+rm ~/.zshrc
+ln -s ./.zshrc ~/.zshrc
+ln -s "$AFS_DIR/.confs/nix-init/.zshrc" "$HOME/.zshrc"
+
